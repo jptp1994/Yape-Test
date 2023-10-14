@@ -3,6 +3,8 @@ package dependencies
 object CacheDep {
     const val kotlin = Dependencies.KotlinDep.kotlin
     const val javax = Dependencies.JavaDep.javax
+    const val fireBase = Dependencies.GoogleDep.fireBase
+    const val gson= Dependencies.CoreDep.gson
     val room = listOf(Dependencies.RoomDep.room, Dependencies.RoomDep.roomKtx)
     const val roomKapt = Dependencies.RoomDep.roomCompiler
 

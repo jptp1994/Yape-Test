@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.rickandmorty.myapplication.ui.settings.SettingsFragment"
+        android:name="com.yape.myapplication.ui.settings.SettingsFragment"
         android:label="@string/fragment_settings_title_label"
         tools:layout="@layout/fragment_settings" />
 

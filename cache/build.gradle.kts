@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.rickandmorty.cache"
+    namespace = Environments.Release.appCache
     compileSdk = Versions.compileAndTargetSdk
 
     defaultConfig {
@@ -37,14 +37,19 @@ android {
 
 dependencies {
 
-    implementation("androidx.room:room-testing:2.5.2")
-
     // Modules
     implementation(project(Modules.data))
     // Kotlin
     implementation(CacheDep.kotlin)
     // JavaX
     implementation(CacheDep.javax)
+
+    //FireBase+
+    implementation(CacheDep.fireBase)
+
+    //Gson
+    implementation(CacheDep.gson)
+
     // Room
     CacheDep.room.forEach {
         api(it)

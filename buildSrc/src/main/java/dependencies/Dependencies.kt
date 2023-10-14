@@ -8,6 +8,7 @@ object Dependencies {
 
 
     object CoreDep {
+        const val gson = "com.google.code.gson:gson:${Versions.gson}"
         const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
         const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
         const val material = "com.google.android.material:material:${Versions.materialDesign}"
@@ -44,6 +45,11 @@ object Dependencies {
 
     }
 
+    object GoogleDep{
+        const val fireBase="com.google.firebase:firebase-crashlytics-buildtools:${Versions.firebase}"
+        const val googleMaps= "com.google.android.gms:play-services-maps:${Versions.googleServices}"
+    }
+
 
     object KotlinDep {
         const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlinVersion}"
@@ -62,7 +68,6 @@ object Dependencies {
         const val lifeCycleRuntime = "androidx.lifecycle:lifecycle-runtime:${Versions.lifeCycleViewModel}"
         const val lifeCycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifeCycleViewModel}"
 
-        //TODO: needs to be used this library
         const val pagination = "androidx.paging:paging-runtime-ktx:${Versions.pagination}"
 
     }
@@ -100,15 +105,5 @@ object Dependencies {
         const val roomTest = "androidx.room:room-testing:${Versions.room}"
     }
 
-
-    //TODO: validate if its needed
-
-    /*
-    //const val testRunner = "androidx.test:runner:${Versions.androidTestRunnerVersion}"
-        //const val testRules = "androidx.test:rules:${Versions.androidTestRuleVersion}"
-        //const val espressoIntents = "androidx.test.espresso:espresso-intents:${Versions.espressoVersion}"
-        //const val espressoContrib = "androidx.test.espresso:espresso-contrib:${Versions.espressoVersion}"
-    //const val androidxTestExtJunit = "androidx.test.ext:${Versions.extJunitVersion}"
-     */
 
 }

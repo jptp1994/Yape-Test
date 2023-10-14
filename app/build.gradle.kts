@@ -83,6 +83,7 @@ dependencies {
     }
     // Glide
     implementation(UiDep.glide)
+
     kapt(UiDep.glideKapt)
 
     // Lottie animation
@@ -99,4 +100,6 @@ dependencies {
     testImplementation(UiDep.Test.testExtJunit)
 
 
+    //maps
+    implementation(UiDep.googleMaps)
 }

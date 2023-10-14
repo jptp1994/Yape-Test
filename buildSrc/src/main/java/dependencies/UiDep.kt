@@ -14,6 +14,10 @@ object UiDep {
     const val navigationUiKtx = Dependencies.CoreDep.navigationUiKtx
     const val activityKtx = Dependencies.CoreDep.activityKtx
 
+
+    //Google
+
+    const val googleMaps = Dependencies.GoogleDep.googleMaps
     // LifeCycle
     val LifeCycle = listOf(
         Dependencies.LifeCycleDep.viewModelKtx,

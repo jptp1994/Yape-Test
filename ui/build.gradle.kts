@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.rick_and_morty.ui"
+    namespace =  Environments.Release.appUI
     compileSdk = Versions.compileAndTargetSdk
 
     defaultConfig {

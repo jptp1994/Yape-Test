@@ -25,10 +25,10 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Rick and Morty App"
+rootProject.name = "Yape App"
 include(":app")
-include(":rick_and_morty_data")
-include(":rick_and_morty_domain")
+include(":data")
+include(":domain")
 include(":cache")
 include(":ui")
 include(":remote")

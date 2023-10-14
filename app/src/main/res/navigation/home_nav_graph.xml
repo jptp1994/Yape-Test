@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigationGraphHome"
-    app:startDestination="@id/characterListFragment">
+    app:startDestination="@id/recipeListFragment">
 
     <fragment
-        android:id="@+id/characterListFragment"
-        android:name="com.rickandmorty.myapplication.ui.characterlist.CharacterListFragment"
-        android:label="@string/fragment_characters_title_label"
-        tools:layout="@layout/fragment_character_list">
+        android:id="@+id/recipeListFragment"
+        android:name="com.yape.myapplication.ui.recipelist.RecipeListFragment"
+        android:label="@string/fragment_recipe_title_label"
+        tools:layout="@layout/fragment_recipe_list">
         <action
-            android:id="@+id/action_characterListFragment_to_characterDetailFragment"
-            app:destination="@id/characterDetailFragment" />
+            android:id="@+id/action_recipeListFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
     </fragment>
     <fragment
-        android:id="@+id/characterDetailFragment"
-        android:name="com.rickandmorty.myapplication.ui.characterdetail.CharacterDetailFragment"
-        android:label="@string/fragment_character_detail_title_label"
-        tools:layout="@layout/fragment_character_detail">
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.yape.myapplication.ui.recipedetail.RecipeDetailFragment"
+        android:label="@string/fragment_recipe_detail_title_label"
+        tools:layout="@layout/fragment_recipe_detail">
         <argument
-            android:name="character_id"
+            android:name="recipe_id"
             android:defaultValue="0L"
             app:argType="long" />
     </fragment>
